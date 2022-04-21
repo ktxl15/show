@@ -1,0 +1,742 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transition: .7s;
+	cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur"),auto;
+}
+body{
+	position: relative;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.navi-all{
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	z-index: 6666;
+	margin-top: 40px;
+}
+.navi{
+	height: 70px;
+	width: 100%;
+}
+.add-navi{
+	background-color: steelblue;
+	position: fixed;
+	top: 0;
+	height: 70px;
+}
+.navi-w{
+	width: 1700px;
+	height: 70px;
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	justify-content: space-between;	
+}
+.logo{
+	height: 0px;
+	width: 180px;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 0 0 30px 30px;
+}
+.add-logo{
+	color: white;
+}
+.logo i{
+	font-weight: 900;
+	font-family: "times new roman";
+	text-shadow: 0 0 10px white;
+}
+.you{
+	color: yellow;
+}
+.navi-ul{
+	display: flex;
+	height: 70px;
+}
+.navi-li{
+	text-align: center;
+	height: 70px;
+	width: 100px;
+	margin-left: 34px;
+	line-height: 70px;
+	font-family: "times new roman";
+	cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur"),auto;
+	color: white;
+	font-size: 19px;
+}
+.navi-li:hover{
+	letter-spacing: 3px;
+	color: slateblue;
+}
+.navi_add{
+	letter-spacing: 3px;
+	color: slateblue;
+}
+.navi-li::after{
+	content: '';
+	display: block;
+	height: 2px ;
+	width: 100px;
+	background-color: slateblue;
+	transform: rotateY(90deg);
+	transition: .7s;
+}
+.navi-li:hover::after{
+	transform: rotateY(0deg);
+}
+.top{
+	height: 900px;
+	width: 100%;
+	background-image: linear-gradient(90deg,white 50% ,skyblue 50%);
+	position: relative;
+	display: flex;
+}
+.topadd-img{
+	position: absolute;
+	height: 1000px;
+	width: 960px;
+	right: 0px;
+	bottom: 0;
+	opacity: 0;
+}
+.topimg-all{
+	height: 700px;
+	width: 500px;
+	position: relative;
+	margin-top: 200px;
+	z-index: 111;
+	overflow: hidden;
+}
+.top-ul{
+	display: flex;
+	height: 500px;
+	width: 1500px;
+	position: relative;
+	z-index: 111;
+}
+.top-li{
+	height: 700px;
+	width: 500px;
+	position: relative;
+	z-index: 111;
+	cursor: move;
+}
+.top-button{
+	height: 20px;
+	width: 120px;
+	z-index: 111;
+	position: absolute;
+	margin-left: 160px;
+	display: flex;
+}
+.button{
+	background-color: silver;
+	height: 20px;
+	width: 20px;
+	border-radius: 1000px;
+	margin-left: 10px;
+	cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur"),auto;
+}
+.addbutton{
+	background-color: #000000;
+}
+.top-img{
+	position: relative;
+	z-index: 111;
+	height: 700px;
+	width: 500px;
+}
+.top-text{
+	width: 500px;
+	height: 400px;
+	position: relative;
+	z-index: 111;
+	margin-left: 240px;
+	margin-top: 300px;
+}
+.top-h1{
+	font-size: 40px;
+	font-family: "ms serif";
+	color: #022C84;
+}
+.top-p{
+	margin-top: 20px;
+	font-size: 19px;
+	width: 350px;
+	font-family: "times new roman";
+}
+.top-bt{
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	border-radius: 7px;
+	border: 0;
+	color: white;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	border: .5px solid #022C84;
+}
+.top-bt span{
+	display: block;
+	position: relative;
+	z-index: 111;
+	font-size: 20px;
+	font-family: "felix titling";
+	color: #022C84;
+}
+.top-bt:hover .jo{
+	color: white;
+}
+.top-bt::after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	background-color: blue;
+	top: 0;
+	left: -200px;
+	transition: .7s;
+	opacity: .4;
+}
+.top-bt:hover::after{
+	left: 0px;
+}
+.top-bt:hover::before{
+	left: 0px;
+}
+.top-bt::before{
+	content: '';
+	display: block;
+	position: absolute;
+	background-color: black;
+	width: 200px;
+	height: 50px;
+	top: 0;
+	left: 200px;
+	transition: .7s;
+}
+.about{
+	height: 900px;
+	width: 100%;
+	background: url(../img/127.jpg);
+	opacity: 0;
+}
+.about-w{
+	width: 1300px;
+	height: 900px;
+	margin: 0 auto;
+	position: relative;
+	border: .1px solid transparent;
+}
+.about-h1{
+	text-align: center;
+	font-size: 50px;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	font-family: "times new roman";
+	color: black;
+	position: relative;
+	z-index: 11;
+}
+.about-text{
+	height: 700px;
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 11;
+}
+.about-h2{
+	font-size: 30px;
+	font-weight: 400;
+	font-family: "times new roman";
+	color: #0000FF;
+	text-align: right;
+	cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur"),auto;
+}
+.about-p{
+	margin-top: 40px;
+	font-size: 20px;
+	text-align: center;
+	font-family: "bodoni mt";
+	line-height: 50px;
+}
+.about-yuan{
+	height: 700px;
+	width: 700px;
+	position: absolute;
+	left: -200px;
+	border-radius: 1000px;
+	top: 0px;
+	overflow: hidden;
+}
+.about-yuan img{
+	animation: jl 80s linear 1;
+	transform: scale(1.5);
+}
+@keyframes jl{
+	0%{
+		 transform: scale(1);
+	}
+	100%{
+		transform: scale(1.5);
+	}
+}
+.content{
+	width: 100%;
+	height: 800px;
+	border: 1px solid transparent;
+	background-color: white;
+	opacity: 0;
+}
+.content-w{
+	height: 800px;
+	width: 1000px;
+	margin: 0 auto;
+	border: .1px solid transparent;
+	position: relative;
+}
+.content-ul{
+	height: 500px;
+	display: flex;
+	margin-top: 170px;
+	width: 400%;
+}
+.content-li{
+	width: 1000px;
+	height: 500px;
+	background-size: 100% 100%;
+	margin-left: 30px;
+	filter: saturate(130%);
+	position: relative;
+}
+.content-li::before{
+	content: '';
+	position: absolute;
+	width: 900px;
+	height: 500px;
+	background-color: black;
+	opacity: .8;
+	transition: .7s;
+}
+.content-li:hover::before{
+	opacity: 0;
+}
+.content-li::after{
+	content: 'K-on (●´Å｀●)';
+	display: block;
+	position: absolute;
+	margin-left: 200px;
+	font-size: 80px;
+	font-weight: 900;
+	font-family: "times new roman";
+	color: pink;
+	text-shadow: 0 0 20px white;
+	margin-top: 400px;
+	opacity: 0;
+	transition: .7s;
+}
+.content-li:hover::after{
+	margin-top: 100px;
+	opacity: 1;
+}
+.content-li:nth-of-type(1){
+	background: url(../img/134.jpg) no-repeat;
+}
+.content-li:nth-of-type(2){
+	background:url(../img/135.jpg) no-repeat;
+}
+.content-li:nth-of-type(2)::after{
+	content: 'K-on(*❦ω❦)';
+}
+.content-li:nth-of-type(3){
+	background:url(../img/136.jpg) no-repeat;
+}
+.content-li:nth-of-type(3)::after{
+	content: 'K-on(灬°ω°灬)';
+}
+.content-li:nth-of-type(4){
+	background: url(../img/137.jpg) no-repeat;
+}
+.content-li:nth-of-type(4)::after{
+	content: 'K-on(✪ω✪)';
+}
+.next-part2{
+	height: 950px;
+	width: 100%;
+	margin-top: 30px;
+	scroll-snap-align: start;
+}
+.next-w{
+	width: 1300px;
+	height: 950px;
+	margin: 0 auto;
+}
+.next-h1{
+	text-align: center;
+	width: 100%;
+	font-family: "times new roman";
+	font-size: 60px;
+}
+.h1-mask{
+	background-color: honeydew;
+	height: 70px;
+	width: 700px;
+	position: absolute;
+	z-index: 111;
+	margin-left: 300px;
+	margin-top: -70px;
+	transition: .7s ease-out;
+}
+.next-li{
+	background-color: #f4f4f4;
+	width: 1000px;
+	height: 250px;
+	margin-top: 30px;
+	display: flex;
+	border-radius: 10px;
+	position: relative;
+	box-shadow: 0 0 10px silver;
+}
+.let{
+	margin-left: 500px;
+	opacity: 0;
+	transition-delay: .2s;
+}
+.go{
+	margin-left: -500px;
+	justify-content: flex-end;
+	opacity: 0;
+	transition-delay: .4s;
+}
+.to{
+	margin-left: 500px;
+	opacity: 0;
+	transition-delay: .6s;
+}
+.go .next-left{
+	background:url(../img/giogio3.jpeg) no-repeat;
+	background-size: 120% ;
+	background-position: 65% 50%;
+}
+.next-left{
+	height: 180px;
+	width: 180px;
+	margin: 30px;
+	background: url(../img/121.jpg) no-repeat;
+	background-position: 70% 15%;
+	position: relative;
+	cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur"),auto;
+	filter: saturate(0%);
+}
+.to .next-left{
+	background: url(../img/giogio2.jpeg) no-repeat;
+	background-position: 60% 20%;
+}
+.next-left::before{
+	content: '';
+	display: block;
+	height: 175px;
+	width: 175px;
+	position: absolute;
+	top: 0;
+	border: black 2px solid;
+	opacity: 0;
+	transition: .7s;
+	box-shadow: 0 0 80px white;
+}
+.next-left::after{
+	content: '';
+	display: block;
+	height: 175px;
+	width: 175px;
+	position: absolute;
+	top: 0;
+	border: black 2px solid;
+	opacity: 0;
+	transition: .7s;
+	box-shadow: 0 0 80px white;
+}
+.next-left:hover::after{
+	opacity: 1;
+	transform: rotate(90deg);
+}
+.next-left:hover::before{
+	opacity: 1;
+	transform: rotate(-45deg);
+} 
+.next-left:hover{
+	box-shadow: 0 0 40px white;
+	filter: saturate(100%);
+}
+.next-right{
+	height: 70px;
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.next-p{
+	font-size: 25px;
+	font-family: "times new roman";
+	text-align: center;
+}
+.addnext-p{
+	cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur"),auto;
+	color: gold;
+	letter-spacing: 2px;
+}
+.blog{
+	height: 1200px;
+	width: 100%;
+	position: relative;
+	margin-top: 50px;
+	border: .1px solid transparent;
+}
+.blog-w{
+	width: 1400px;
+	height: 650px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.blog-all{
+	cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur"),auto;
+	position: relative;
+	transform-style: preserve-3d;
+	perspective: 700px;
+	position: relative;
+}
+.yiqi:hover{
+	transform:scale(1) rotateY(0deg);
+}
+.blog-act1{
+	height: 600px;
+	width: 400px;
+	background-color: red;
+	transform: scale(.8)rotateY(40deg);
+	background: url(../img/bjlt2.jpeg) no-repeat;
+	position: relative;
+}
+.blog-act1::after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 600px;
+	height: 600px;
+	width: 400px;
+	background-image: url(../img/bjlt2.jpeg);
+	transform: rotate(-180deg)rotateY(180deg);
+}
+.blog-act1::before{
+	content: '';
+	position: absolute;
+	z-index: 11;
+	top: 600px;
+	height: 600px;
+	width: 400px;
+	background: linear-gradient(to bottom,rgba(225,225,225,0.295),white);
+}
+.blog-act2::after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 600px;
+	height: 600px;
+	width: 400px;
+	background: url(../img/bjlt3.jpeg) no-repeat;
+	background-size: 120%;
+	transform: rotate(180deg)rotateY(-180deg);
+}
+.blog-act2::before{
+	content: '';
+	position: absolute;
+	z-index: 11;
+	top: 600px;
+	height: 600px;
+	width: 400px;
+	background: linear-gradient(to bottom,rgba(225,225,225,0.295),white);
+}
+.blog-act3::after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 600px;
+	height: 600px;
+	width: 400px;
+	background: url(../img/bjlt1.jpeg) no-repeat;
+	background-position-y: 120%;
+	transform: rotate(-180deg)rotateY(180deg);
+}
+.blog-act3::before{
+	content: '';
+	position: absolute;
+	z-index: 11;
+	top: 600px;
+	height: 600px;
+	width: 400px;
+	background: linear-gradient(to bottom,rgba(225,225,225,0.295),white);
+}
+.blog-act2{
+	height: 600px;
+	width: 400px;
+	background-color: red;
+	transform: scale(.8);
+	background: url(../img/bjlt3.jpeg);
+	background-size: 120%;
+}
+.blog-act3{
+	height: 600px;
+	width: 400px;
+	background-color: red;
+	transform: scale(.8)rotateY(-40deg);
+	background: url(../img/bjlt1.jpeg) no-repeat;
+	background-position-y: 120%;
+}
+.blog-all{
+	margin-top: 400px;
+	opacity: 0;
+}
+.contact{
+	height: 800px;
+	width: 100%;
+	position: relative;
+	box-shadow: 0 10px 10px black;
+}
+.contact-w{
+	width: 1300px;
+	height: 800px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+}
+.contact-left{
+	height: 700px;
+	width: 900px;
+	background-color: #022C84;
+	display: flex;
+}
+.contact-right{
+	width: 0px;
+	height: 700px;
+	background: url(../img/14.jpg);
+	background-position: 20% 30%;
+	position: relative;
+}
+.contact-text{
+	width: 600px;
+	height: 700px;
+	margin: 0 auto;
+}
+.contact-p{
+	text-align: center;
+	font-size: 40px;
+	font-family: "engravers mt";
+	color: white;
+	margin-top: 50px;
+}
+.contact-p:hover{
+	letter-spacing: 4px;
+	cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur"),auto;
+}
+.contact_input{
+	height: 400px;
+	width: 100%;
+	margin-top: 30px;
+}
+#email{
+	width: 400px;
+	height: 40px;
+	margin-bottom: 30px;
+	border: 0;
+	outline: none;
+	text-indent: 20px;
+	font-family: "times new roman";
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px black;
+}
+#message{
+	margin-bottom: 30px;
+	border: 0;
+	outline: none;
+	text-indent: 20px;
+	font-family: "times new roman";
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px black;
+	line-height: 30px;
+}
+.contact_btn{
+	width: 30%;
+	height: 30px;
+	border: 0;
+	border-radius: 4px;
+	background-color: white;
+	font-family: "times new roman";
+	transition: .2s;
+	cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur"),auto;
+}
+.foot{
+	height: 340px;
+	background-color: blue;
+	width: 100%;
+}
+.foot-w{
+	width: 1300px;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.foot_1{
+	width: 30%;
+	height: 300px;
+	
+}
+.foot_h1{
+	line-height: 70px;
+	font-size: 30px;
+	font-family: "times new roman";
+	color: white;
+	text-shadow: 2px 2px 10px white;
+}
+.foot_p{
+	font-size: 20px;
+	line-height: 30px;
+	color: #9f9f9f;
+	font-family: "script mt bold";
+}
+.foot_content{
+	display: flex;
+	justify-content: space-between;
+}
+.content_gif{
+	width: 80%;
+	height: 19vh;
+	background: url(../img/888.gif);
+	background-size: 100% 100%;
+}
+.content_img img{
+	display: block;
+	height: 40px;
+	margin-top: 20px;
+}
+.end_ul{
+	width: 100%;
+}
+.end_li{
+	color: white;
+	line-height: 60px;
+	font-size: 20px;
+	font-family: "book antiqua";
+	text-align: center;
+}
+.foop{
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 10px white;
+	font-family: "felix titling";
+}
